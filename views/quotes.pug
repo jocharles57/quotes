@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.container
+    h1 Barry the Frog Quotes
+    ul
+      each val in list
+        li= val.quote
+          
+    p Back to 
+      a(href="/") Homepage

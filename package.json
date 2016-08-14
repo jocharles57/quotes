@@ -1,12 +1,15 @@
 {
-  "name": "openshift-cartridge-nodejs-template",
-  "version": "1.0.1",
-  "description": "Custom Node.js cartridge for OpenShift - sample application",
-  "private": true,
-  "main": "start.js",
+  "name": "quotes-api",
+  "version": "0.1.0",
   "scripts": {
-    "start": "node --use_strict start.js"
+    "start": "node app.js"
   },
-  "author": "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
-  "license": "ISC"
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.13.4",
+    "body-parser": "~1.15.1",
+    "mongodb": "~2.1.21",
+    "consolidate": "~0.14.1",
+    "pug": "~2.0.0-alpha8"
+  }
 }
